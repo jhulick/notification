@@ -1,0 +1,5 @@
+spring.data.mongodb.uri: mongodb://localhost:27020/messaging
+
+kafka:
+    topic: "file-share-expiration"
+    url: localhost:9003
