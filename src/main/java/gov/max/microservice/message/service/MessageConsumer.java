@@ -47,7 +47,7 @@ public class MessageConsumer {
                 log.info("**** Received Message from Topic: {} ****", msg);
                 List<String> result = parseMsg(msg);
                 if (result.size() > 2) {
-                    emailService.send(result.get(0), "CMPE273-Assignment-2-" + result.get(1) + "- Poll Result", result.get(2));
+                    emailService.send(result.get(0), "testapp-" + result.get(1) + "- Result", result.get(2));
                 } else {
                     log.error("Invalid message format:{}", msg);
                 }
